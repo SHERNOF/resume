@@ -1,0 +1,55 @@
+section.professionalSummary {
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 60px;
+    /* clip-path: polygon(0 0, 25% 15%, 100% 0, 100% 100%, 0 100%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%); */
+    padding-bottom: 4rem;
+    /* top: 30; */
+    margin-top: -5px;
+
+    .leftSummary{
+        flex: 1;
+        
+        p b {
+            font-size: 1.3rem;
+            color: $mild;
+            margin-bottom: 1rem;
+            
+        }
+
+        .dlCv {
+            margin-top: 1rem;
+        }
+        
+    }
+    
+    .rightSummary{
+        flex: 1;
+        margin-left: 8rem;
+        color: red;
+        margin-bottom: 4rem;
+        line-height: 3;
+        
+    
+        .information {
+            display: grid;
+            grid-template-columns: 25% 5% 68%;
+            color: $mild;
+            font-size: 1.3rem;
+
+            
+        }
+
+       
+    }
+
+    }
+
+       
+
+    
+    
+

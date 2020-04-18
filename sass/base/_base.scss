@@ -1,0 +1,25 @@
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: $dark;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+html {
+    font-size: 62.5%;
+}
