@@ -1,96 +1,103 @@
 .timeline {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+ 
     margin-left: .5rem;
-    // height: 90vh;
     margin-bottom: 5rem;
     margin-top: 5rem;
     border-bottom: .1rem solid $dark-blue;
+    padding: 0 2rem;
+
+    .timeline-title {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
     
+    .timeline_content {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
     
-    .timelines {    
+        .timelines { 
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom: 5rem;
-        
-        .timeline1, 
-        .timeline2{
-        
-        margin: 0 auto;
-        font-size: 1rem;
 
-        .study {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
+            .timeline1, 
+            .timeline2{
+            
+            margin: 0 auto;
+            font-size: 1rem;
 
-        .work {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .timeline-body {
-            position: relative;
-            margin-left: 10rem;
-            border-radius: 0 8px 8px 0;
-            padding: 5px 0;
-
-            &::after {
-                content: "";
-                width: 4px;
-                height: 100%;
-                background-color: $dark-blue;
-                position: absolute;
-                left: -4px;
-                top: 0;
+            .study {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 2rem;
             }
 
-            .timeline-item {
+            .work {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .timeline-body {
                 position: relative;
+                margin-left: 10rem;
+                border-radius: 0 8px 8px 0;
+                padding: 5px 0;
 
                 &::after {
-                    content: '';
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    border: 4px solid $dark-blue;
-                    background-color: whitesmoke;
+                    content: "";
+                    width: 4px;
+                    height: 100%;
+                    background-color: $dark-blue;
                     position: absolute;
-                    left: -1.2rem;
-                    top: 4px;
-                    z-index: 9;
+                    left: -4px;
+                    top: 0;
                 }
 
-                .time {
-                    position: absolute;
-                    left: -8rem;
-                    top: 4px;
-                    opacity: .5;
-                    font-size: 1rem;
-                }
+                .timeline-item {
+                    position: relative;
 
-                .content {
-                    margin-left: 2rem;
-                    padding-bottom: 2rem;
-                    border-bottom: 1px dashed #555;
-                }
+                    &::after {
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        border: 4px solid $dark-blue;
+                        background-color: whitesmoke;
+                        position: absolute;
+                        left: -1.2rem;
+                        top: 4px;
+                        z-index: 9;
+                    }
 
-                .title {
-                    font-weight: 500;
-                    margin-bottom: 15px;
-                    color: $dark-blue;
-                    text-decoration: none;
+                    .time {
+                        position: absolute;
+                        left: -8rem;
+                        top: 4px;
+                        opacity: .5;
+                        font-size: 1rem;
+                    }
+
+                    .content {
+                        margin-left: 2rem;
+                        padding-bottom: 2rem;
+                        border-bottom: 1px dashed #555;
+                    }
+
+                    .title {
+                        font-weight: 500;
+                        margin-bottom: 1.5rem;
+                        text-decoration: none;
+                        color: $fade;
+                    }
                 }
             }
         }
     }
-}
-
-   
-    
 
     .skills {
         margin-bottom: 5rem;
@@ -107,17 +114,22 @@
 
         .skillTitle {
             font-size: 1.5rem;
-            color: $dark-blue;
+            color: $fade;
         }   
     
         .sk1 path.mainline {
             stroke-width: 5;     
         }
+
+        .label-center {
+            padding-top: 1.2rem;
+            margin-left: 2rem;
+        }
         
         .label {
             color: whitesmoke;
             font-size: 1.3rem;
-            margin-left: 2rem;
+            margin-left: 4rem;
             margin-bottom: 1rem;
         }
 
@@ -132,7 +144,7 @@
 
 
         }
-
+    }
 
 }
 

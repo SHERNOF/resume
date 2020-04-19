@@ -4,8 +4,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1; }
 
 h2 {
-  text-decoration: underline;
-  color: #28365f;
+  color: #7081b9;
   margin-bottom: 1rem; }
 
 /* Reset */
@@ -250,102 +249,113 @@ nav {
         font-size: 1rem; } }
 
 .timeline {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   margin-left: .5rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
-  border-bottom: 0.1rem solid #28365f; }
-  .timeline .timelines {
+  border-bottom: 0.1rem solid #28365f;
+  padding: 0 2rem; }
+  .timeline .timeline-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1rem; }
+  .timeline .timeline_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 5rem; }
-    .timeline .timelines .timeline1,
-    .timeline .timelines .timeline2 {
-      margin: 0 auto;
-      font-size: 1rem; }
-      .timeline .timelines .timeline1 .study,
-      .timeline .timelines .timeline2 .study {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 2rem; }
-      .timeline .timelines .timeline1 .work,
-      .timeline .timelines .timeline2 .work {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 2rem; }
-      .timeline .timelines .timeline1 .timeline-body,
-      .timeline .timelines .timeline2 .timeline-body {
-        position: relative;
-        margin-left: 10rem;
-        border-radius: 0 8px 8px 0;
-        padding: 5px 0; }
-        .timeline .timelines .timeline1 .timeline-body::after,
-        .timeline .timelines .timeline2 .timeline-body::after {
-          content: "";
-          width: 4px;
-          height: 100%;
-          background-color: #28365f;
-          position: absolute;
-          left: -4px;
-          top: 0; }
-        .timeline .timelines .timeline1 .timeline-body .timeline-item,
-        .timeline .timelines .timeline2 .timeline-body .timeline-item {
-          position: relative; }
-          .timeline .timelines .timeline1 .timeline-body .timeline-item::after,
-          .timeline .timelines .timeline2 .timeline-body .timeline-item::after {
-            content: '';
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            border: 4px solid #28365f;
-            background-color: whitesmoke;
-            position: absolute;
-            left: -1.2rem;
-            top: 4px;
-            z-index: 9; }
-          .timeline .timelines .timeline1 .timeline-body .timeline-item .time,
-          .timeline .timelines .timeline2 .timeline-body .timeline-item .time {
-            position: absolute;
-            left: -8rem;
-            top: 4px;
-            opacity: .5;
-            font-size: 1rem; }
-          .timeline .timelines .timeline1 .timeline-body .timeline-item .content,
-          .timeline .timelines .timeline2 .timeline-body .timeline-item .content {
-            margin-left: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px dashed #555; }
-          .timeline .timelines .timeline1 .timeline-body .timeline-item .title,
-          .timeline .timelines .timeline2 .timeline-body .timeline-item .title {
-            font-weight: 500;
-            margin-bottom: 15px;
-            color: #28365f;
-            text-decoration: none; }
-  .timeline .skills {
-    margin-bottom: 5rem;
-    display: grid;
-    grid-template-rows: auto;
     justify-content: center; }
-    .timeline .skills .skillSet {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem; }
-    .timeline .skills .skillTitle {
-      font-size: 1.5rem;
-      color: #28365f; }
-    .timeline .skills .sk1 path.mainline {
-      stroke-width: 5; }
-    .timeline .skills .label {
-      color: whitesmoke;
-      font-size: 1.3rem;
-      margin-left: 2rem;
-      margin-bottom: 1rem; }
-    .timeline .skills .js {
-      font-size: 1.5rem; }
-      .timeline .skills .js ion-icon {
-        color: #28365f;
-        margin-top: 1.5rem; }
+    .timeline .timeline_content .timelines {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 5rem; }
+      .timeline .timeline_content .timelines .timeline1,
+      .timeline .timeline_content .timelines .timeline2 {
+        margin: 0 auto;
+        font-size: 1rem; }
+        .timeline .timeline_content .timelines .timeline1 .study,
+        .timeline .timeline_content .timelines .timeline2 .study {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 2rem; }
+        .timeline .timeline_content .timelines .timeline1 .work,
+        .timeline .timeline_content .timelines .timeline2 .work {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 2rem; }
+        .timeline .timeline_content .timelines .timeline1 .timeline-body,
+        .timeline .timeline_content .timelines .timeline2 .timeline-body {
+          position: relative;
+          margin-left: 10rem;
+          border-radius: 0 8px 8px 0;
+          padding: 5px 0; }
+          .timeline .timeline_content .timelines .timeline1 .timeline-body::after,
+          .timeline .timeline_content .timelines .timeline2 .timeline-body::after {
+            content: "";
+            width: 4px;
+            height: 100%;
+            background-color: #28365f;
+            position: absolute;
+            left: -4px;
+            top: 0; }
+          .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-item,
+          .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item {
+            position: relative; }
+            .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-item::after,
+            .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item::after {
+              content: '';
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              border: 4px solid #28365f;
+              background-color: whitesmoke;
+              position: absolute;
+              left: -1.2rem;
+              top: 4px;
+              z-index: 9; }
+            .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-item .time,
+            .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item .time {
+              position: absolute;
+              left: -8rem;
+              top: 4px;
+              opacity: .5;
+              font-size: 1rem; }
+            .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-item .content,
+            .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item .content {
+              margin-left: 2rem;
+              padding-bottom: 2rem;
+              border-bottom: 1px dashed #555; }
+            .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-item .title,
+            .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item .title {
+              font-weight: 500;
+              margin-bottom: 1.5rem;
+              text-decoration: none;
+              color: #7081b9; }
+    .timeline .timeline_content .skills {
+      margin-bottom: 5rem;
+      display: grid;
+      grid-template-rows: auto;
+      justify-content: center; }
+      .timeline .timeline_content .skills .skillSet {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem; }
+      .timeline .timeline_content .skills .skillTitle {
+        font-size: 1.5rem;
+        color: #7081b9; }
+      .timeline .timeline_content .skills .sk1 path.mainline {
+        stroke-width: 5; }
+      .timeline .timeline_content .skills .label-center {
+        padding-top: 1.2rem;
+        margin-left: 2rem; }
+      .timeline .timeline_content .skills .label {
+        color: whitesmoke;
+        font-size: 1.3rem;
+        margin-left: 4rem;
+        margin-bottom: 1rem; }
+      .timeline .timeline_content .skills .js {
+        font-size: 1.5rem; }
+        .timeline .timeline_content .skills .js ion-icon {
+          color: #28365f;
+          margin-top: 1.5rem; }
 
 @media (max-width: 700px) {
   .timeline {
@@ -428,21 +438,19 @@ nav {
         margin-top: 1.5rem; } }
 
 .stats {
-  margin-bottom: 5rem;
-  margin-top: 5rem;
   border-bottom: 0.1rem solid #28365f; }
   .stats .counters {
-    padding: 2rem 1rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 3rem; }
     .stats .counters:hover {
       cursor: pointer; }
     .stats .counters .head {
       flex: 1;
       height: 100%;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 2rem; }
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-bottom: 3rem;
+      margin-top: 3rem; }
       .stats .counters .head h1 {
         font-size: 3rem; }
     .stats .counters .stats-icon {
