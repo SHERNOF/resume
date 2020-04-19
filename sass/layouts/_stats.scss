@@ -1,0 +1,91 @@
+.stats {
+
+    margin-bottom: 5rem;
+    // color: whitesmoke;
+
+    .counters {
+        // color: white;
+        padding: 2rem 1rem;
+        border-bottom: .1rem solid $dark-blue;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .head {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        .stats-icon {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+
+            .counter {
+                font-size: 2rem;
+                margin: 10px 0;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+            ion-icon {
+                font-size: 4rem;
+              }  
+
+              .fas {
+                font-size: 4rem;
+              }
+        }
+    } 
+
+@media(max-width:70rem) {
+    .counters {
+
+        .head {
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .stats-icon {
+            grid-template-columns: repeat(2, 1fr);
+
+            .counter {
+                font-size: 2rem;
+                margin: 10px 0;
+            }
+            
+            h3 {
+                font-size: 1.2rem;
+            }
+            ion-icon {
+                font-size: 3rem;
+              }  
+
+              .fas {
+                font-size: 3rem;
+              }
+        }
+
+        // this is to apply only the boder in th fst two divs; selecting thefirst two divs and apply the border-bottom and padding
+        .stats-icon > div:nth-of-type(1), .stats-icon > div:nth-of-type(2) {
+            border-bottom: 1px lightskyblue solid;
+            padding-bottom: 20px;
+        }
+}
+}
+}
+
+
