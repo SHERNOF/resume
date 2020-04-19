@@ -5,13 +5,15 @@
     margin-left: .5rem;
     // height: 90vh;
     margin-bottom: 5rem;
-    border-bottom: .1rem solid $dark-blue ;
+    margin-top: 5rem;
+    border-bottom: .1rem solid $dark-blue;
+    
     
     .timelines {    
         display: grid;
         grid-template-columns: 1fr 1fr;
-        // position: relative;
-
+        margin-bottom: 5rem;
+        
         .timeline1, 
         .timeline2{
         
@@ -244,7 +246,7 @@
             .skillSet {
                 line-height: .9;
                 font-size: 3rem;
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
             }
     
 

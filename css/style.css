@@ -67,7 +67,7 @@ nav {
     nav .inner button {
       display: none; } }
 
-section.profile {
+.profile {
   background-color: #000;
   display: flex;
   align-items: center;
@@ -76,34 +76,35 @@ section.profile {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
   padding-bottom: 4rem;
   margin-bottom: 5rem; }
-  section.profile .left {
+  .profile .left {
     flex: 2;
     display: flex;
     align-items: center; }
-  section.profile .right {
+  .profile .right {
     flex: 1; }
-  section.profile .left h2 {
+  .profile .left h2 {
     color: #7081b9;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 1rem; }
-  section.profile .left p {
+  .profile .left p {
     color: #8997bd;
     font-size: 14px; }
-  section.profile .left .cd-headline.loading-bar .cd-words-wrapper::after {
-    background: linear-gradient(to right, #2b55cc, #1ecab8); }
-  section.profile .left p b {
+  .profile .left .cd-headline.loading-bar .cd-words-wrapper::after {
+    background: linear-gradient(to right, #2b55cc, #1ecab8);
+    -webkit-background: linear-gradient(to right, #2b55cc, #1ecab8); }
+  .profile .left p b {
     padding-bottom: 1rem;
     font-weight: 400; }
-  section.profile .left img {
+  .profile .left img {
     width: 128px;
     height: 140px;
     border-radius: 50%;
     object-fit: cover; }
-  section.profile .left .avatar__block {
+  .profile .left .avatar__block {
     position: relative;
     margin-right: 2rem; }
-  section.profile .left .avatar__block span {
+  .profile .left .avatar__block span {
     position: absolute;
     right: 4px;
     bottom: 4px;
@@ -117,24 +118,24 @@ section.profile {
     color: #eff2f9;
     box-shadow: 0px 0px 0px 0px rgba(32, 41, 54, 0.05);
     cursor: pointer; }
-  section.profile .right ul.contact {
+  .profile .right ul.contact {
     list-style-type: none;
     margin-bottom: 1.6rem; }
-  section.profile .right ul.contact li {
+  .profile .right ul.contact li {
     color: #848db3;
     margin-top: .7rem;
     font-size: 14px; }
-  section.profile .right ul.contact li i {
+  .profile .right ul.contact li i {
     font-size: 18px;
     margin-right: 0.3rem; }
-  section.profile .right ul.socials {
+  .profile .right ul.socials {
     display: flex;
     align-items: center;
     list-style: none; }
-  section.profile .right ul.socials li {
+  .profile .right ul.socials li {
     margin-right: 0.8rem;
     font-size: 2rem; }
-  section.profile .right ul.socials li a {
+  .profile .right ul.socials li a {
     display: inline-block;
     width: 36px;
     height: 36px;
@@ -142,11 +143,11 @@ section.profile {
     color: #eff2f9;
     line-height: 36px;
     text-align: center; }
-  section.profile .right ul.socials li:nth-child(1) a {
+  .profile .right ul.socials li:nth-child(1) a {
     background: #2b55cc; }
-  section.profile .right ul.socials li:nth-child(2) a {
+  .profile .right ul.socials li:nth-child(2) a {
     background: #ff5da0; }
-  section.profile .right ul.socials li:nth-child(3) a {
+  .profile .right ul.socials li:nth-child(3) a {
     background: #4ac7ec; }
 
 @media (max-width: 700px) {
@@ -253,10 +254,12 @@ section.profile {
   grid-template-columns: 1fr 1fr;
   margin-left: .5rem;
   margin-bottom: 5rem;
+  margin-top: 5rem;
   border-bottom: 0.1rem solid #28365f; }
   .timeline .timelines {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5rem; }
     .timeline .timelines .timeline1,
     .timeline .timelines .timeline2 {
       margin: 0 auto;
@@ -407,7 +410,7 @@ section.profile {
     .timeline .skills .skillSet {
       line-height: .9;
       font-size: 3rem;
-      margin-bottom: 1rem; }
+      margin-bottom: 2rem; }
     .timeline .skills .skillTitle {
       font-size: 1.5rem;
       color: #28365f; }
@@ -425,10 +428,12 @@ section.profile {
         margin-top: 1.5rem; } }
 
 .stats {
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  border-bottom: 0.1rem solid #28365f; }
   .stats .counters {
     padding: 2rem 1rem;
-    border-bottom: 0.1rem solid #28365f; }
+    margin-bottom: 5rem; }
     .stats .counters:hover {
       cursor: pointer; }
     .stats .counters .head {
@@ -443,7 +448,7 @@ section.profile {
     .stats .counters .stats-icon {
       display: grid;
       grid-gap: 30px;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       text-align: center; }
       .stats .counters .stats-icon .counter {
         font-size: 2rem;
