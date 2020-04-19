@@ -17,7 +17,8 @@ h2 {
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   background: #151a33;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  color: whitesmoke; }
 
 html {
   font-size: 62.5%; }
@@ -41,7 +42,8 @@ nav {
     letter-spacing: .1rem;
     font-weight: 500; }
   nav .inner .logo {
-    color: #4d79f6; }
+    color: #4d79f6;
+    margin-left: .5rem; }
   nav .inner button {
     background: #2b55cc;
     border: none;
