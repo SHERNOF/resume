@@ -7,6 +7,11 @@ h2 {
   color: #7081b9;
   margin-bottom: 1rem; }
 
+@media (max-width: 700px) {
+  h2 {
+    justify-content: center;
+    text-align: center; } }
+
 /* Reset */
 * {
   margin: 0;
@@ -365,77 +370,84 @@ nav {
     align-items: center;
     margin-left: 0;
     margin-bottom: 5rem; }
-    .timeline .timelines {
+    .timeline .timeline-title {
+      text-align: center;
+      justify-content: center; }
+    .timeline .timeline_content {
       display: flex;
-      flex-direction: column-reverse; }
-      .timeline .timelines .timeline1 {
-        font-size: 1rem;
-        margin-bottom: 4rem; }
-        .timeline .timelines .timeline1 .study {
-          text-align: center;
+      flex-direction: column; }
+      .timeline .timeline_content .timelines {
+        display: flex;
+        flex-direction: column-reverse; }
+        .timeline .timeline_content .timelines .timeline1 {
+          font-size: 1rem;
+          margin-bottom: 2rem; }
+          .timeline .timeline_content .timelines .timeline1 .study {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            line-height: .9; }
+          .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-body .time {
+            position: absolute;
+            left: -8rem;
+            top: 5px;
+            opacity: .5;
+            font-size: 1.3rem; }
+          .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-body .content {
+            margin-left: 1.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px dashed #555; }
+          .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-body .title {
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: #28365f;
+            text-decoration: none; }
+        .timeline .timeline_content .timelines .timeline2 {
+          font-size: 1.4rem;
+          margin-bottom: 2rem; }
+          .timeline .timeline_content .timelines .timeline2 .work {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            line-height: .9; }
+          .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item .time {
+            left: -10rem;
+            font-size: 1.2rem; }
+          .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item .content {
+            margin-left: 1.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px dashed #555; }
+          .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item .title {
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: #28365f;
+            text-decoration: none; }
+      .timeline .timeline_content .skills {
+        margin-bottom: 5rem;
+        margin-top: -2rem;
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+        line-height: 2; }
+        .timeline .timeline_content .skills .skillSet {
+          line-height: .9;
           font-size: 3rem;
-          margin-bottom: 2rem;
-          line-height: .9; }
-        .timeline .timelines .timeline1 .timeline-body .timeline-body .time {
-          position: absolute;
-          left: -8rem;
-          top: 5px;
-          opacity: .5;
-          font-size: 1.3rem; }
-        .timeline .timelines .timeline1 .timeline-body .timeline-body .content {
-          margin-left: 1.5rem;
-          padding-bottom: 2rem;
-          border-bottom: 1px dashed #555; }
-        .timeline .timelines .timeline1 .timeline-body .timeline-body .title {
-          font-weight: 500;
-          margin-bottom: 15px;
-          color: #28365f;
-          text-decoration: none; }
-      .timeline .timelines .timeline2 {
-        font-size: 1.4rem;
-        margin-bottom: 3rem; }
-        .timeline .timelines .timeline2 .work {
-          text-align: center;
-          font-size: 3rem;
-          margin-bottom: 2rem;
-          line-height: .9; }
-        .timeline .timelines .timeline2 .timeline-body .timeline-item .time {
-          left: -10rem;
-          font-size: 1.2rem; }
-        .timeline .timelines .timeline2 .timeline-body .timeline-item .content {
-          margin-left: 1.5rem;
-          padding-bottom: 2rem;
-          border-bottom: 1px dashed #555; }
-        .timeline .timelines .timeline2 .timeline-body .timeline-item .title {
-          font-weight: 500;
-          margin-bottom: 15px;
-          color: #28365f;
-          text-decoration: none; }
-  .timeline .skills {
-    margin-bottom: 5rem;
-    display: grid;
-    grid-template-rows: auto;
-    justify-content: center;
-    line-height: 2; }
-    .timeline .skills .skillSet {
-      line-height: .9;
-      font-size: 3rem;
-      margin-bottom: 2rem; }
-    .timeline .skills .skillTitle {
-      font-size: 1.5rem;
-      color: #28365f; }
-    .timeline .skills .sk1 path.mainline {
-      stroke-width: 5; }
-    .timeline .skills .label {
-      color: whitesmoke;
-      font-size: 1.6rem;
-      margin-left: 2rem;
-      margin-bottom: 1rem; }
-    .timeline .skills .js {
-      font-size: 1.5rem; }
-      .timeline .skills .js ion-icon {
-        color: #28365f;
-        margin-top: 1.5rem; } }
+          margin-bottom: 2rem; }
+        .timeline .timeline_content .skills .skillTitle {
+          font-size: 1.5rem;
+          color: #28365f; }
+        .timeline .timeline_content .skills .sk1 path.mainline {
+          stroke-width: 5; }
+        .timeline .timeline_content .skills .label {
+          color: whitesmoke;
+          font-size: 1.6rem;
+          margin-left: 2rem;
+          margin-bottom: 1rem; }
+        .timeline .timeline_content .skills .js {
+          font-size: 1.5rem; }
+          .timeline .timeline_content .skills .js ion-icon {
+            color: #28365f;
+            margin-top: 1.5rem; } }
 
 .stats {
   border-bottom: 0.1rem solid #28365f; }
@@ -468,9 +480,6 @@ nav {
       .stats .counters .stats-icon .fas {
         font-size: 4rem; }
   @media (max-width: 70rem) {
-    .stats .counters .head h1 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem; }
     .stats .counters .stats-icon {
       grid-template-columns: repeat(2, 1fr); }
       .stats .counters .stats-icon .counter {
