@@ -243,7 +243,9 @@ nav {
     .professionalSummary .leftSummary .dlCv {
       margin-top: 2rem; }
     .professionalSummary .rightSummary {
-      flex: 1;
+      display: none;
+      justify-content: flex-start;
+      align-items: flex-start;
       margin-left: 0;
       margin-top: 1rem;
       margin-bottom: 0;
@@ -251,7 +253,7 @@ nav {
       .professionalSummary .rightSummary .information {
         display: grid;
         grid-template-columns: 30% 5% 63%;
-        font-size: 1rem; } }
+        font-size: 1.5rem; } }
 
 .timeline {
   margin-left: .5rem;
