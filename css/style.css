@@ -338,7 +338,8 @@ nav {
       margin-bottom: 5rem;
       display: grid;
       grid-template-rows: auto;
-      justify-content: center; }
+      justify-content: center;
+      line-height: 1.5; }
       .timeline .timeline_content .skills .skillSet {
         text-align: center;
         font-size: 2rem;
@@ -349,7 +350,6 @@ nav {
       .timeline .timeline_content .skills .sk1 path.mainline {
         stroke-width: 5; }
       .timeline .timeline_content .skills .label-center {
-        padding-top: 1.2rem;
         margin-left: 2rem; }
       .timeline .timeline_content .skills .label {
         color: whitesmoke;
@@ -438,11 +438,11 @@ nav {
           color: #28365f; }
         .timeline .timeline_content .skills .sk1 path.mainline {
           stroke-width: 5; }
+        .timeline .timeline_content .skills .label-center {
+          padding-bottom: .5rem; }
         .timeline .timeline_content .skills .label {
           color: whitesmoke;
-          font-size: 1.6rem;
-          margin-left: 2rem;
-          margin-bottom: 1rem; }
+          font-size: 1.6rem; }
         .timeline .timeline_content .skills .js {
           font-size: 1.5rem; }
           .timeline .timeline_content .skills .js ion-icon {
