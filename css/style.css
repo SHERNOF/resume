@@ -29,7 +29,8 @@ html {
 
 .container {
   max-width: 1140px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 2rem; }
 
 nav {
   background: #28365f;
@@ -332,16 +333,34 @@ nav {
               border-bottom: 1px dashed #555; }
             .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-item .title,
             .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item .title {
-              font-weight: 500;
+              font-size: 1.3rem;
               margin-bottom: 1.5rem;
               text-decoration: none;
               color: #7081b9; }
+        .timeline .timeline_content .timelines .timeline1 .Cognex:hover,
+        .timeline .timeline_content .timelines .timeline1 .Sanmina:hover,
+        .timeline .timeline_content .timelines .timeline1 .PCI:hover,
+        .timeline .timeline_content .timelines .timeline2 .Cognex:hover,
+        .timeline .timeline_content .timelines .timeline2 .Sanmina:hover,
+        .timeline .timeline_content .timelines .timeline2 .PCI:hover {
+          cursor: pointer; }
     .timeline .timeline_content .skills {
       margin-bottom: 5rem;
       display: grid;
       grid-template-rows: auto;
       justify-content: center;
       line-height: 1.5; }
+      .timeline .timeline_content .skills .modal-title {
+        color: #eff2f9; }
+      .timeline .timeline_content .skills .modal-body {
+        border-top: 1px solid #969393;
+        border-bottom: 1px solid #969393; }
+        .timeline .timeline_content .skills .modal-body .listItems {
+          list-style: none;
+          color: #eff2f9; }
+      .timeline .timeline_content .skills .jobDescription {
+        font-size: 1rem;
+        max-width: 50rem; }
       .timeline .timeline_content .skills .skillSet {
         text-align: center;
         font-size: 2rem;
@@ -354,7 +373,7 @@ nav {
       .timeline .timeline_content .skills .label-center {
         margin-left: 2rem; }
       .timeline .timeline_content .skills .label {
-        color: whitesmoke;
+        color: #7081b9;
         font-size: 1.3rem;
         margin-left: 4rem;
         margin-bottom: 1rem; }
@@ -496,6 +515,41 @@ nav {
     .stats .counters .stats-icon > div:nth-of-type(1), .stats .counters .stats-icon > div:nth-of-type(2) {
       border-bottom: 1px lightskyblue solid;
       padding-bottom: 20px; } }
+
+section.work .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+section.work .wrapper .portfolio .tabs ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly; }
+
+section.work .wrapper .portfolio .tabs ul li a {
+  color: #7081b9;
+  border-bottom: 1px solid transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.4rem;
+  letter-spacing: .2rem; }
+
+section.work .wrapper .portfolio .tabs ul li a.active {
+  border-color: #4d79f6;
+  color: #4d79f6;
+  transition: all .3s ease-in-out; }
+
+section.work .wrapper .portfolio .portfolio_wrapper {
+  margin-top: 4rem;
+  display: flex; }
+
+section.work .wrapper .portfolio .portfolio_wrapper .item {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%; }
+
+section.work .wrapper .portfolio .portfolio_wrapper a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 footer {
   padding: 1.6rem 0;

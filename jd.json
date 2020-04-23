@@ -1,0 +1,58 @@
+[
+    {
+
+        "id": 1,
+        "company": "Cognex Job Description",
+        "jobdesc":
+
+            [
+                " ",
+                "1. Perform all the field service work for 89 network-connected and computer controlled electro-mechanical test equipment and 36 label printers deployed at our contract manufacturer in Batam, Indonesia.",
+                "2. Perfected equipment installation and qualification within 1 shift (8 hours), KPI target = 2 days",
+                "3. Respond to a monthly average of 60 field service request and conduct onsite/remote update, troubleshooting and repair on test equipment and label printers.",
+                "4. Perform preventative and corrective maintenance and equipment calibration.",
+                "5. Perform equipment software and hardware upgrade",
+                "6. Prepare and send prompt technical reports and proposals; record, maintain and share repair history documentation. Ensure all operations are compliant with Cognex specifications.",
+                "7. Provide training and procedures to Engineers, technicians and operators about equipment operation",
+                "8. Oversee the sourcing, supply, and maintenance of service parts inventory and manufacturing jig fabrication for CM use.",
+                "9. Act as the primary point of contact between the US Engineering, Cork, Ireland Programme/Project Managers, suppliers and CM, with a focus on providing technical support for problem resolution of equipment and product issues."
+            ]
+    },
+
+    {
+
+        "id": 2,
+        "company": "Pt. Sanmina Job Description",
+        "jobdesc":
+
+            [
+                " ",
+                "1. Similar job description in Pt. PCI Elektronik Internasional"
+                
+                
+            ]
+    },
+
+    {
+
+        "id": 3,
+        "company": "Pt. PCI Job Description",
+        "jobdesc":
+
+            [
+                " ",
+                "1. Ensured efficient equipment management including installation, qualification, preventive maintenance, hardware and software upgrade, calibration, as well as troubleshooting and repair of test equipment.",
+                "2. Product testing, failure analyses, and repair",
+                "3. Prepare and send prompt technical engineering reports and proposals; record, maintain and share repair history documentation. Ensure all operations are compliant with customer’s strict regulatory requirements.",
+                "4. Train employees for the operation and maintenance of test equipment to ensure consistent implementation and to enhance productivity.",
+                "5. Organized and officiated tactical meetings with the subordinates, in addition to liaising with customers and colleagues to address equipment and product-related requirements.",
+                "6. Monitor and improve test and production processes.",
+                "7. Participate in production line design setup, compute machine capacity",
+                "8. Investigate the root cause of production line issues, evaluated and recommended solutions to production line issues and test equipment utilization and planning.",
+                "9. Research of new innovative technologies for process improvements",
+                "10. Dispatched for product transfer and to resolve equipment and product issues in different customer sites (USA and China) and overseas equipment training (Singapore)."
+                
+            ]
+    }
+
+]

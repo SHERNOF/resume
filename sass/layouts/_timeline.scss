@@ -6,6 +6,9 @@
     border-bottom: .1rem solid $dark-blue;
     padding: 0 2rem;
 
+    
+   
+
     .timeline-title {
         display: flex;
         align-items: flex-start;
@@ -74,6 +77,8 @@
                         z-index: 9;
                     }
 
+                 
+
                     .time {
                         position: absolute;
                         left: -8rem;
@@ -86,14 +91,28 @@
                         margin-left: 2rem;
                         padding-bottom: 2rem;
                         border-bottom: 1px dashed #555;
+
+                      
                     }
 
                     .title {
-                        font-weight: 500;
+                        // font-weight: 300;
+                        font-size: 1.3rem;
                         margin-bottom: 1.5rem;
                         text-decoration: none;
                         color: $fade;
                     }
+
+                   
+                }
+            }
+
+            .Cognex,
+            .Sanmina,
+            .PCI {
+
+                &:hover{
+                    cursor: pointer;
                 }
             }
         }
@@ -105,6 +124,30 @@
         grid-template-rows: auto;
         justify-content: center;
         line-height: 1.5;
+
+        .modal-title {
+            color: $pure;
+        }
+
+        .modal-body {
+            border-top:  1px solid rgb(150, 147, 147);
+            border-bottom:  1px solid rgb(150, 147, 147);
+            .listItems {
+                list-style: none;
+                color: $pure;
+            }
+        }
+
+
+        
+        .jobDescription {
+            font-size: 1rem;
+            // visibility: hidden;
+            max-width: 50rem;
+            // border: .1rem solid black;
+
+           
+        }
 
         .skillSet {
             // margin-top: 1rem;
@@ -128,7 +171,7 @@
         }
         
         .label {
-            color: whitesmoke;
+            color: $fade;
             font-size: 1.3rem;
             margin-left: 4rem;
             margin-bottom: 1rem;

@@ -8,6 +8,8 @@ $('#profile_ripple').ripples({
 })
 
 
+
+
 // stats
 
 const counter  = document.querySelectorAll('.counter');
@@ -17,10 +19,8 @@ counter.forEach(counter => {
     const updateCount = () => {
         const target = +counter.getAttribute('data-target');
         const count = +counter.innerText;
-        console.log(target);
+        // console.log(target);
         const inc = target / speed;
-        
-        
 
         if(count < target) {
             counter.innerText = Math.ceil(count + inc);
@@ -28,22 +28,65 @@ counter.forEach(counter => {
         } else {
             count.innerText = target
         }
-
-        // console.log(inc);
-        // console.log(count);
     }
     updateCount();
 
-    // $('.stats').hover(function(){
-    //   const a = 0
-    //   let b = document.querySelectorAll('.counter').innerText = a;
-    //   console.log(b)
-
-    //   if(b = '0'){
-    //     updateCount();
-    //   }
-
-    // })
-
 })
+
+
+// image filter
+// var $wrapper = $('.portfolio_wrapper');
+
+// // initialize isotope
+
+// $wrapper.isotope({
+//     filter : '*',
+//     layoutMode : 'masonry',
+//     animationOptions : {
+//         duration: 750,
+//         easing: 'linear',
+//     }
+// });
+
+// let links = document.querySelectorAll('.tabs a');
+
+
+// links.forEach(link => {
+
+//     let selector = link.dataset.filter;
+
+//     link.addEventListener('click', function(e){
+//         e.preventDefault();
+
+//         $wrapper.isotope({
+//             filter : '*',
+//             layoutMode : 'masonry',
+//             animationOptions : {
+//             duration: 750,
+//             easing: 'linear',
+//             }
+//         });
+
+//         links.forEach(link => {
+//             link.classList.remove('active')
+//         })
+//         e.target.classList.add('active');
+//     })
+
+//     // magnify pop up
+
+//     $('.magnify').magnificPopup({
+//         type: 'image',
+//         gallery: {
+//             enabled: true
+//         },
+//         zoom : {
+//             enable: true
+//         }
+//     })
+// })
+
+
+
+
 
