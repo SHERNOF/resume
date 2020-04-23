@@ -9,7 +9,7 @@ document.querySelector('.ionics').addEventListener('click', ionicsJD);
 function cognexJD(){
 
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'jd.json', true);
+    xhr.open('GET', 'json/jd.json', true);
     xhr.onload = function(){
     
         if(this.status === 200){
@@ -29,7 +29,7 @@ function cognexJD(){
     function sanminaJD(){
 
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'jd.json', true);
+        xhr.open('GET', 'json/jd.json', true);
         xhr.onload = function(){
         
             if(this.status === 200){
@@ -49,7 +49,7 @@ function cognexJD(){
         function pciJD(){
 
             const xhr = new XMLHttpRequest();
-            xhr.open('GET', 'jd.json', true);
+            xhr.open('GET', 'json/jd.json', true);
             xhr.onload = function(){
             
                 if(this.status === 200){
