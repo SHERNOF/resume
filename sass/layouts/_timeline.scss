@@ -6,8 +6,6 @@
     border-bottom: .1rem solid $dark-blue;
     padding: 0 2rem;
 
-    
-   
 
     .timeline-title {
         display: flex;
@@ -17,6 +15,20 @@
     }
     
     .timeline_content {
+
+
+        .modal-title {
+            color: $pure;
+        }
+
+        .modal-body {
+            border-top:  1px solid rgb(150, 147, 147);
+            border-bottom:  1px solid rgb(150, 147, 147);
+            .statsItems {
+                list-style: none;
+                color: $pure;
+            }
+        }
 
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -77,8 +89,6 @@
                         z-index: 9;
                     }
 
-                 
-
                     .time {
                         position: absolute;
                         left: -8rem;
@@ -91,6 +101,8 @@
                         margin-left: 2rem;
                         padding-bottom: 2rem;
                         border-bottom: 1px dashed #555;
+                        font-size: 1.2rem;
+                        line-height: 1.2;
 
                       
                     }
@@ -119,27 +131,10 @@
     }
 
     .skills {
-        margin-bottom: 5rem;
-        display: grid;
         grid-template-rows: auto;
         justify-content: center;
-        line-height: 1.5;
-
-        .modal-title {
-            color: $pure;
-        }
-
-        .modal-body {
-            border-top:  1px solid rgb(150, 147, 147);
-            border-bottom:  1px solid rgb(150, 147, 147);
-            .listItems {
-                list-style: none;
-                color: $pure;
-            }
-        }
-
-
-        
+        text-align: center;
+    
         .jobDescription {
             font-size: 1rem;
             // visibility: hidden;
@@ -150,31 +145,41 @@
         }
 
         .skillSet {
-            // margin-top: 1rem;
             text-align: center;
             font-size: 2rem;
-            margin-bottom: 2rem;
         }
 
-        .skillTitle {
-            font-size: 1.5rem;
-            color: $fade;
-        }   
-    
-        .sk1 path.mainline {
-            stroke-width: 5;     
-        }
-
-        .label-center {
-            // padding-top: 1.2rem;
-            margin-left: 2rem;
-        }
+        .skillList {
+            display: grid;
+            justify-items: center;
+            margin-top: 2rem;
+            line-height: 1.5;
+            text-align: left;
         
-        .label {
-            color: $fade;
-            font-size: 1.3rem;
-            margin-left: 4rem;
-            margin-bottom: 1rem;
+            .skill {
+              margin-bottom: 1rem;
+              
+                .label {
+                    color: $fade;
+                    font-size: 1.3rem;
+                    margin-bottom: 1rem;
+                    margin-left: 2rem;   
+                }
+
+                .ldBar-label {
+                    top: 80%;
+                }
+            }
+
+            .skillTitle {
+            
+                font-size: 1.5rem;
+                color: $fade;
+            }   
+        
+            .sk1 path.mainline {
+                stroke-width: 5;     
+            }
         }
 
         .js {

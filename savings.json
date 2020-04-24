@@ -1,0 +1,48 @@
+[
+    {
+
+        "id": 1,
+        "type": "Hard Savings",
+        "details":
+
+            [
+                "--- Cognex ---",
+                "1. Finch rework cost savings - $49K",
+                "2. Kestrel Red-X Project; rework and retest cost savings - $55K",
+                "--- Sanmina ---",
+                "3. SCSI to SATA HDD conversion - $3.9K ",
+                "4. Implements paperless system in ICT stations - $5K",
+                "5. Test Pin Consumption Cost - $3.9K",
+                "--- PCI ---",
+                "6. Lean Six Sigma Project - Addressed the Defective Component Declaration at Debug Area - $16K",
+                "7. Test Pin Consumption Cost - $3.2K",
+                "8. Teradyne Relay Card In House Repair - $5.7K",
+                "9. Calibration Cost Reduction - $5K"
+            ]
+    },
+
+    {
+
+        "id": 2,
+        "type": "Approved Software Modifications",
+        "details":
+
+            [
+                "--- Cognex ---",
+                "1. Finch rework cost savings - $49K",
+                "2. Kestrel Red-X Project; rework and retest cost savings - $55K",
+                "--- Sanmina ---",
+                "3. SCSI to SATA HDD conversion - $3.9K ",
+                "4. Implements paperless system in ICT stations - $5K",
+                "5. Test Pin Consumption Cost - $3.9K",
+                "--- PCI ---",
+                "6. Lean Six Sigma Project - Addressed the Defective Component Declaration at Debug Area - $16K",
+                "7. Test Pin Consumption Cost - $3.2K",
+                "8. Teradyne Relay Card In House Repair - $5.7K",
+                "9. Calibration Cost Reduction - $5K"
+            ]
+    }
+
+    
+
+]

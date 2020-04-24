@@ -13,7 +13,7 @@ $('#profile_ripple').ripples({
 // stats
 
 const counter  = document.querySelectorAll('.counter');
-const speed = 200;
+const speed = 400;
 
 counter.forEach(counter => {
     const updateCount = () => {

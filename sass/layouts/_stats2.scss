@@ -1,6 +1,39 @@
 .stats {
     border-bottom: .1rem solid $dark-blue;
 
+    .modal-title {
+        color: $pure;
+    }
+
+    .modal-body {
+        border-top:  1px solid rgb(150, 147, 147);
+        border-bottom:  1px solid rgb(150, 147, 147);
+
+        .statsItems {
+            list-style: none;
+            color: $pure;
+
+        }
+    }
+
+    .modal-footer {
+        border-top: none;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 6rem;
+        // font-size: 3rem;
+
+        .totalBox {
+            font-size: 3rem;
+
+            .pTotal {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    
+
     .counters {
         margin-bottom: 3rem;
     
@@ -25,8 +58,12 @@
         .stats-icon {
             display: grid;
             grid-gap: 30px;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             text-align: center;
+
+            i {
+                font-size: 4rem;
+            }
 
             .counter {
                 font-size: 2rem;

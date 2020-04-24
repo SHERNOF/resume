@@ -2,57 +2,92 @@
     {
 
         "id": 1,
-        "company": "Cognex Job Description",
-        "jobdesc":
+        "type": "Hard Savings",
+        "unit": "Total = 146000",
+        "details":
 
             [
+                "--- Cognex ---",
+                "1. Finch rework cost savings - $49K",
+                "2. Kestrel Red-X Project; rework and retest cost savings - $55K",
                 " ",
-                "1. Perform all the field service work for 89 network-connected and computer controlled electro-mechanical test equipment and 36 label printers deployed at our contract manufacturer in Batam, Indonesia.",
-                "2. Perfected equipment installation and qualification within 1 shift (8 hours), KPI target = 2 days",
-                "3. Respond to a monthly average of 60 field service request and conduct onsite/remote update, troubleshooting and repair on test equipment and label printers.",
-                "4. Perform preventative and corrective maintenance and equipment calibration.",
-                "5. Perform equipment software and hardware upgrade",
-                "6. Prepare and send prompt technical reports and proposals; record, maintain and share repair history documentation. Ensure all operations are compliant with Cognex specifications.",
-                "7. Provide training and procedures to Engineers, technicians and operators about equipment operation",
-                "8. Oversee the sourcing, supply, and maintenance of service parts inventory and manufacturing jig fabrication for CM use.",
-                "9. Act as the primary point of contact between the US Engineering, Cork, Ireland Programme/Project Managers, suppliers and CM, with a focus on providing technical support for problem resolution of equipment and product issues."
+                "--- Sanmina ---",
+                "3. SCSI to SATA HDD conversion - $3.9K ",
+                "4. Implements paperless system in ICT stations - $5K",
+                "5. Test Pin Consumption Cost - $3.9K",
+                " ",
+                "--- PCI ---",
+                "6. Lean Six Sigma Project - Addressed the Defective Component Declaration at Debug Area - $16K",
+                "7. Test Pin Consumption Cost - $3.2K",
+                "8. Teradyne Relay Card In House Repair - $5.7K",
+                "9. Calibration Cost Reduction - $5K"
             ]
     },
 
     {
 
-        "id": 2,
-        "company": "Pt. Sanmina Job Description",
-        "jobdesc":
+        "id": "2",
+        "type": "Approved Software and Hardware Modifications",
+        "unit": "Total = 26",
+        "details":
 
             [
-                " ",
-                "1. Similar job description in Pt. PCI Elektronik Internasional"
+                "--- Software ---",
+                "1. Mostly Optimization of Test Parameters to improve the test repatability",
+                "2. Study and stabilize the Finch Focus parameter that results to $49K rework cost savings",
                 
-                
+
+                "--- Hardware ---",
+                "1. Remodelled the lens gripper in focus testing to reduce the focus failure from 4.3% to 1%.",
+                "2. Modified the Merlin Vision nest that reduced the cycle time from 3minutes to 2",
+                "3. Redesigned the focus and final test nest of DM262 modular and high-end models that resulted in increased unit per hour (UPH) by 105% and 128% at focus test and final test respectively."
             ]
     },
 
     {
 
-        "id": 3,
-        "company": "Pt. PCI Job Description",
-        "jobdesc":
+        "id": "3",
+        "type": "Workflow Optimization",
+        "unit": "Total = 12",
+
+        "details":
 
             [
-                " ",
-                "1. Ensured efficient equipment management including installation, qualification, preventive maintenance, hardware and software upgrade, calibration, as well as troubleshooting and repair of test equipment.",
-                "2. Product testing, failure analyses, and repair",
-                "3. Prepare and send prompt technical engineering reports and proposals; record, maintain and share repair history documentation. Ensure all operations are compliant with customer’s strict regulatory requirements.",
-                "4. Train employees for the operation and maintenance of test equipment to ensure consistent implementation and to enhance productivity.",
-                "5. Organized and officiated tactical meetings with the subordinates, in addition to liaising with customers and colleagues to address equipment and product-related requirements.",
-                "6. Monitor and improve test and production processes.",
-                "7. Participate in production line design setup, compute machine capacity",
-                "8. Investigate the root cause of production line issues, evaluated and recommended solutions to production line issues and test equipment utilization and planning.",
-                "9. Research of new innovative technologies for process improvements",
-                "10. Dispatched for product transfer and to resolve equipment and product issues in different customer sites (USA and China) and overseas equipment training (Singapore)."
-                
+                "1. Executed preventative maintenance programs, which included establishing of policies, leading to reduced downtime by 67%.",
+                "2. Established the “Test Equipment Commissioning Procedure” defining the test plans for equipment and product qualifications. Target of equipment setup within 8 hours (KPI target = 2 days) and a minimum of 80% GR&R grade.",
+                "3. Established the “Test Program Qualification Procedure” targeting new program release in 1 day.",
+                "4. Accomplished a reduced equipment troubleshooting TAT by an average of 2.5 hours in 2018 from the previous rate of 6.83 hours.",
+                "5. Increased DM60 UPH by 21% thru computer hardware upgrade and test parameter tweaks",
+                "6. Qualified multiple production jig fabrication suppliers, and successfully attained a 20% lower jig fabrication cost.",
+                "7. Oversaw the establishment of the system which accurately identified the cause of product failure. The system resulted in US$16K annual saving and led to the accomplishment of Lean Six Sigma Green Belt Certification (LSGB-SI-32032-C).",
+                "8. Oversaw successful qualification of multiple test pin vendors, achieving US$3500 in annual cost savings.",
+                "9. Developed the method to repair the Teradyne in-circuit tester relay cards, and achieved S$1900 savings per relay card., average 3 relay cards per year",
+                "10. Led the qualification of multiple equipment calibration suppliers, and reduced the external calibration cost by US$5000 per year.",
+                "11. Develop software to detect duplicate Serial Number",
+                "12. Authored numerous Test Equipment Procedure"
+
+            ]
+    },
+
+    {
+
+        "id": "4",
+        "type": "Qualifications",
+        "unit": "Total = 5",
+  
+        "details":
+
+            [
+                "1. Bachelor of Science in Electronics and Communications Engineering",
+                "2. Qualifications Recognized by Engineers Australia",
+                "3. Lean Six-Sigma Green Belter - (LSGB-SI-32032-C)",
+                "4. Certified Red-X Apprentice",
+                "5. JavaScript uDemy course"
+            
             ]
     }
+
+
+    
 
 ]
