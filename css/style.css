@@ -274,7 +274,6 @@ nav {
     .professionalSummary .leftSummary .dlCv {
       margin-top: 2rem; }
     .professionalSummary .rightSummary {
-      display: none;
       justify-content: flex-start;
       align-items: flex-start;
       margin-left: 0;
