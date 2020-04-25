@@ -17,7 +17,8 @@ function cognexJD(){
                 b += jd[0].jobdesc[i] + "<br>";
             }
             document.querySelector('.listItems').innerHTML = b;
-            document.querySelector('.modal-title').innerHTML = jd[0].company;
+            document.querySelector('.jd').innerHTML = jd[0].company;
+            console.log(jd[0].company)
             } 
         }
         xhr.send();

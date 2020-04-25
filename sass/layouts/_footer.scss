@@ -1,6 +1,46 @@
 footer {
-    // background: $dark-blue;
-    padding: 1.6rem 0;
     text-align: center;
-    color: red;
+    // color: red;
+    display: flex;
+    justify-content: space-between;
+
+    .left p {
+        color: $pure;
+        font-size: 1.3rem;
+    }
+
+    .right ul.socials {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    .right ul.socials li{
+        font-size: 1.3rem;
+        margin-right: .8rem;
+    }
+
+    .right ul.socials li a{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        color: $pure;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .right ul.socials li:nth-child(1) a{
+        background: $secondary;
+    }
+
+    .right ul.socials li:nth-child(2) a{
+        background: $fade;
+    }
+
+    .right ul.socials li:nth-child(3) a{
+        background: $twitter;
+    }
+
 }
+

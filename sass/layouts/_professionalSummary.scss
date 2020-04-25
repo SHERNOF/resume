@@ -1,7 +1,5 @@
 .professionalSummary {
-    background-color: var(--dark);
     display: flex;
-    // align-items: center;
     padding: 2rem;
     margin-top: 5rem;
     padding-bottom: 2rem;
@@ -21,19 +19,6 @@
         }
         
     }
-    
-    // .rightSummary{ orig do not delete
-    //     flex: 1;
-    //     margin-left: 8rem;
-    //     margin-bottom: 5rem;
-    //     line-height: 3;
-        
-    //     .information {
-    //         display: grid;
-    //         grid-template-columns: 25% 5% 68%;
-    //         font-size: 1.3rem;   
-    //     }  
-    // }
 
     .rightSummary{
         flex: 1;
@@ -51,22 +36,6 @@
                 list-style: none;
                 color: $pure;
     
-            }
-        }
-    
-        .modal-footer {
-            border-top: none;
-            display: flex;
-            justify-content: space-between;
-            padding-left: 6rem;
-            // font-size: 3rem;
-    
-            .totalBox {
-                font-size: 3rem;
-    
-                .pTotal {
-                    font-size: 3rem;
-                }
             }
         }
 

@@ -16,23 +16,7 @@
         }
     }
 
-    .modal-footer {
-        border-top: none;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 6rem;
-        // font-size: 3rem;
-
-        .totalBox {
-            font-size: 3rem;
-
-            .pTotal {
-                font-size: 3rem;
-            }
-        }
-    }
-
-    
+  
 
     .counters {
         margin-bottom: 3rem;
@@ -106,7 +90,7 @@
               }
         }
 
-        // this is to apply only the boder in th fst two divs; selecting thefirst two divs and apply the border-bottom and padding
+        // this is to apply only the border in th fst two divs; selecting thefirst two divs and apply the border-bottom and padding
         .stats-icon > div:nth-of-type(1), .stats-icon > div:nth-of-type(2) {
             border-bottom: 1px lightskyblue solid;
             padding-bottom: 20px;

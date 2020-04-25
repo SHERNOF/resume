@@ -7,9 +7,6 @@ $('#profile_ripple').ripples({
 
 })
 
-
-
-
 // stats
 
 const counter  = document.querySelectorAll('.counter');
