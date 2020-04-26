@@ -32,15 +32,16 @@
         "details":
 
             [
-                "--- Software ---",
-                "1. Mostly Optimization of Test Parameters to improve the test repatability",
+                "--- Software Modification Highlights ---",
+                "1. Mostly Optimization of Test Parameters to improve the test repatability and address the yield issue",
                 "2. Study and stabilize the Finch Focus parameter that results to $49K rework cost savings",
                 
 
                 "--- Hardware ---",
                 "1. Remodelled the lens gripper in focus testing to reduce the focus failure from 4.3% to 1%.",
                 "2. Modified the Merlin Vision nest that reduced the cycle time from 3minutes to 2",
-                "3. Redesigned the focus and final test nest of DM262 modular and high-end models that resulted in increased unit per hour (UPH) by 105% and 128% at focus test and final test respectively."
+                "3. Redesigned the focus and final test nest of DM262 modular and high-end models that resulted in increased unit per hour (UPH) by 105% and 128% at focus test and final test respectively.",
+                "4. Increased DM60 UPH by 21% thru computer hardware upgrade and test parameter tweaks"
             ]
     },
 
@@ -64,7 +65,17 @@
                 "9. Developed the method to repair the Teradyne in-circuit tester relay cards, and achieved S$1900 savings per relay card., average 3 relay cards per year",
                 "10. Led the qualification of multiple equipment calibration suppliers, and reduced the external calibration cost by US$5000 per year.",
                 "11. Develop software to detect duplicate Serial Number",
-                "12. Authored numerous Test Equipment Procedure"
+                "12. Authored numerous Test Equipment System Procedure:",
+                "",
+                "a. Equipment Setup, Operation and Maintenance Procedures",
+                "b. Defective Component Declaration Procedure",
+                "c. Golden sample Qualification Procedure",
+                "d. Equipment GR&R Procedure",
+                "e. Control of Equipment for Calibration Procedure",
+                "f. Test Equipment Buy-off Procedure",
+                "g. Software Control and Qualification Proceudre",
+                "h. Product Failure Analysis Procedure"
+
 
             ]
     },
