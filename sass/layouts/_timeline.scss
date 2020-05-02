@@ -1,360 +1,343 @@
 .timeline {
- 
-    margin-left: .5rem;
-    margin-bottom: 3rem;
-    margin-top: 5rem;
-    border-bottom: .1rem solid $dark-blue;
-    padding: 0 2rem;
+  margin-left: 0.5rem;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  border-bottom: 0.1rem solid $dark-blue;
+  padding: 0 2rem;
 
+  .timeline-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
 
-    .timeline-title {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        margin-bottom: 1rem;
+  .timeline_content {
+    .modal-title {
+      color: $pure;
     }
-    
-    .timeline_content {
 
+    .modal-body {
+      border-top: 1px solid rgb(150, 147, 147);
+      border-bottom: 1px solid rgb(150, 147, 147);
+      .statsItems {
+        list-style: none;
+        color: $pure;
+      }
+    }
 
-        .modal-title {
-            color: $pure;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    .timelines {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 5rem;
+
+      .timeline2 {
+        border-left: 2rem;
+      }
+
+      .timeline1,
+      .timeline2 {
+        margin: 0 auto;
+        font-size: 1rem;
+
+        .study {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 2rem;
         }
 
-        .modal-body {
-            border-top:  1px solid rgb(150, 147, 147);
-            border-bottom:  1px solid rgb(150, 147, 147);
-            .statsItems {
-                list-style: none;
-                color: $pure;
-            }
+        .work {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 2rem;
         }
 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-    
-        .timelines { 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: 5rem;
+        .timeline-body {
+          position: relative;
+          margin-left: 10rem;
+          border-radius: 0 8px 8px 0;
+          padding: 5px 0;
 
-        .timeline2 {
-            border-left: 2rem;
+          &::after {
+            content: "";
+            width: 4px;
+            height: 100%;
+            background-color: $dark-blue;
+            position: absolute;
+            left: -4px;
+            top: 0;
+          }
+
+          .timeline-item {
+            position: relative;
+
+            &::after {
+              content: "";
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              border: 4px solid $dark-blue;
+              background-color: whitesmoke;
+              position: absolute;
+              left: -1.2rem;
+              top: 4px;
+              z-index: 9;
+            }
+
+            .time {
+              position: absolute;
+              left: -9rem;
+              top: 4px;
+              // opacity: .5;
+              font-size: 1.2rem;
+              color: $fade;
+            }
+
+            .content {
+              margin-left: 2rem;
+              padding-bottom: 2rem;
+              border-bottom: 1px dashed #555;
+              font-size: 1.2rem;
+              line-height: 1.2;
+            }
+
+            .title {
+              font-size: 1.3rem;
+              margin-bottom: 1.5rem;
+              text-decoration: none;
+              color: $fade;
+            }
+          }
         }
 
-            .timeline1, 
-            .timeline2{
-            
-            margin: 0 auto;
-            font-size: 1rem;
-
-            .study {
-                text-align: center;
-                font-size: 2rem;
-                margin-bottom: 2rem;
-            }
-
-            .work {
-                text-align: center;
-                font-size: 2rem;
-                margin-bottom: 2rem;
-            }
-
-            .timeline-body {
-                position: relative;
-                margin-left: 10rem;
-                border-radius: 0 8px 8px 0;
-                padding: 5px 0;
-
-                &::after {
-                    content: "";
-                    width: 4px;
-                    height: 100%;
-                    background-color: $dark-blue;
-                    position: absolute;
-                    left: -4px;
-                    top: 0;
-                }
-
-                .timeline-item {
-                    position: relative;
-
-                    &::after {
-                        content: '';
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 50%;
-                        border: 4px solid $dark-blue;
-                        background-color: whitesmoke;
-                        position: absolute;
-                        left: -1.2rem;
-                        top: 4px;
-                        z-index: 9;
-                    }
-
-                    .time {
-                        position: absolute;
-                        left: -9rem;
-                        top: 4px;
-                        // opacity: .5;
-                        font-size: 1.2rem;
-                        color: $fade;
-                    }
-
-                    .content {
-                        margin-left: 2rem;
-                        padding-bottom: 2rem;
-                        border-bottom: 1px dashed #555;
-                        font-size: 1.2rem;
-                        line-height: 1.2;
-
-                      
-                    }
-
-                    .title {
-                        font-size: 1.3rem;
-                        margin-bottom: 1.5rem;
-                        text-decoration: none;
-                        color: $fade;
-                    }
-
-                   
-                }
-            }
-
-            .Cognex,
-            .Sanmina,
-            .PCI {
-
-                &:hover{
-                    cursor: pointer;
-                }
-            }
+        .Cognex,
+        .Sanmina,
+        .PCI {
+          &:hover {
+            cursor: pointer;
+          }
         }
+      }
     }
 
     .skills {
-        grid-template-rows: auto;
-        justify-content: center;
+      grid-template-rows: auto;
+      justify-content: center;
+      text-align: center;
+
+      .jobDescription {
+        font-size: 1rem;
+        // visibility: hidden;
+        max-width: 50rem;
+        // border: .1rem solid black;
+      }
+
+      .skillSet {
         text-align: center;
-    
-        .jobDescription {
-            font-size: 1rem;
-            // visibility: hidden;
-            max-width: 50rem;
-            // border: .1rem solid black;
+        font-size: 2rem;
+      }
 
-           
+      .skillList {
+        display: grid;
+        justify-items: center;
+        margin-top: 2rem;
+        line-height: 1.5;
+        text-align: left;
+
+        .skill {
+          margin-bottom: 1rem;
+
+          .label {
+            color: $fade;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+          }
+
+          .ldBar-label {
+            top: 80%;
+          }
         }
 
-        .skillSet {
-            text-align: center;
-            font-size: 2rem;
+        .skillTitle {
+          font-size: 1.5rem;
+          color: $fade;
         }
 
-        .skillList {
-            display: grid;
-            justify-items: center;
-            margin-top: 2rem;
-            line-height: 1.5;
-            text-align: left;
-        
-            .skill {
-              margin-bottom: 1rem;
-              
-                .label {
-                    color: $fade;
-                    font-size: 1.3rem;
-                    margin-bottom: 1rem;
-                    margin-left: 2rem;   
-                }
-
-                .ldBar-label {
-                    top: 80%;
-                }
-            }
-
-            .skillTitle {
-            
-                font-size: 1.5rem;
-                color: $fade;
-            }   
-        
-            .sk1 path.mainline {
-                stroke-width: 5;     
-            }
+        .sk1 path.mainline {
+          stroke-width: 5;
         }
+      }
 
-        .js {
-            font-size: 1.5rem;
-            
-                ion-icon {
-                    color: $dark-blue;
-                    margin-top: 1.5rem;
-                }
-            }  
+      .js {
+        font-size: 1.5rem;
+
+        ion-icon {
+          color: $dark-blue;
+          margin-top: 1.5rem;
         }
+      }
     }
+  }
 }
 
-@media(max-width:700px){
-
-    .timeline {
+@media (max-width: 700px) {
+  .timeline {
     display: grid;
     grid-template-columns: 1fr;
 
     justify-content: center;
     align-items: center;
     margin-left: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 
-    .timeline-title{
-        // padding: 1rem
-        text-align: center;
-        justify-content: center;
+    .timeline-title {
+      // padding: 1rem
+      text-align: center;
+      justify-content: center;
     }
-    
-    .timeline_content {    
-        display: flex;
-        flex-direction: column;
 
-        // .timeline1:nth-child(1) .timeline-body .timeline-item .content p{
-        //     font-size: 1rem;
-        // }
-       .timelines {
+    .timeline_content {
+      display: flex;
+      flex-direction: column;
 
-            display: flex;
-            flex-direction: column-reverse;
-
-            .timeline1 {
-                font-size: 1rem;
-                margin-bottom: 2rem;
-
-                .study {
-                    text-align: center;
-                    font-size: 3rem;
-                    margin-bottom: 2rem;
-                    line-height: .9;
-                }
-
-                .timeline-body {
-                    .timeline-body {
-        
-                            .time {
-                                position: absolute;
-                                left: -8rem;
-                                top: 5px;
-                                opacity: .5;
-                                font-size: 1.3rem;
-                            }
-            
-                            .content {
-                                margin-left: 1.5rem;
-                                padding-bottom: 2rem;
-                                border-bottom: 1px dashed #555;
-                            }
-            
-                            .title {
-                                font-weight: 500;
-                                margin-bottom: 15px;
-                                color: $dark-blue;
-                                text-decoration: none;
-                            }  
-                        }
-                    }
-                }
-
-            .timeline2{
-        
-                font-size: 1.4rem;
-                margin-bottom: 2rem;
-        
-                .work {
-                    text-align: center;
-                    font-size: 3rem;
-                    margin-bottom: 2rem;
-                    line-height: .9;
-                }
-
-                .timeline-body {
-
-                    .timeline-item {
-        
-                            .time {
-                                left: -10rem;
-                                font-size: 1.2rem;
-                            }
-            
-                            .content {
-                                margin-left: 1.5rem;
-                                padding-bottom: 2rem;
-                                border-bottom: 1px dashed #555;
-                            }
-            
-                            .title {
-                                font-weight: 500;
-                                margin-bottom: 15px;
-                                color: $dark-blue;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
+      .modal {
+        max-width: 350px;
+        .modal-dialog {
+          .modal-body {
+            li {
+              //   color: red;
+              font-size: 1rem;
             }
-
-            .skills {
-                margin-bottom: 5rem;
-                margin-top: -2rem;
-                display: grid;
-                grid-template-rows: auto;
-                justify-content: center;
-                line-height: 2;
-                
-                .skillSet {
-                    line-height: .9;
-                    font-size: 3rem;
-                    margin-bottom: 2rem;
-                }
-        
-    
-                .skillTitle {
-                    font-size: 1.5rem;
-                    color: $dark-blue;
-                }   
-            
-                .sk1 path.mainline {
-                    stroke-width: 5;     
-                }
-
-                .label-center {
-                    padding-bottom: .5rem;
-                    // margin-left: 2rem;
-                }
-                
-                .label {
-                    color: whitesmoke;
-                    font-size: 1.6rem;
-                    // margin-left: 2rem;
-                    // margin-bottom: 1rem;
-                }
-        
-                .js {
-                    font-size: 1.5rem;
-                    
-                    ion-icon {
-                        color: $dark-blue;
-                        margin-top: 1.5rem;
-                    }
-                }     
-            }
+          }
         }
+      }
+
+      // .timeline1:nth-child(1) .timeline-body .timeline-item .content p{
+      //     font-size: 1rem;
+      // }
+      .timelines {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .timeline1 {
+          font-size: 1rem;
+
+          .study {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            line-height: 0.9;
+          }
+
+          .timeline-body {
+            .timeline-body {
+              .time {
+                position: absolute;
+                left: -8rem;
+                top: 5px;
+                opacity: 0.5;
+                font-size: 1.3rem;
+              }
+
+              .content {
+                margin-left: 1.5rem;
+                padding-bottom: 2rem;
+                border-bottom: 1px dashed #555;
+              }
+
+              .title {
+                font-weight: 500;
+                margin-bottom: 15px;
+                color: $dark-blue;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        .timeline2 {
+          font-size: 1.4rem;
+          margin-bottom: 2rem;
+
+          .work {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            line-height: 0.9;
+          }
+
+          .timeline-body {
+            .timeline-item {
+              .time {
+                left: -10rem;
+                font-size: 1.2rem;
+              }
+
+              .content {
+                margin-left: 1.5rem;
+                padding-bottom: 2rem;
+                border-bottom: 1px dashed #555;
+              }
+
+              .title {
+                font-weight: 500;
+                margin-bottom: 15px;
+                color: $dark-blue;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+
+      .skills {
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+        line-height: 2;
+
+        .skillSet {
+          line-height: 0.9;
+          font-size: 3rem;
+        }
+
+        .skillTitle {
+          font-size: 1.5rem;
+          color: $dark-blue;
+        }
+
+        .sk1 path.mainline {
+          stroke-width: 5;
+        }
+
+        .label-center {
+          padding-bottom: 0.5rem;
+          // margin-left: 2rem;
+        }
+
+        .label {
+          color: whitesmoke;
+          font-size: 1.6rem;
+          // margin-left: 2rem;
+          // margin-bottom: 1rem;
+        }
+
+        .js {
+          font-size: 1.5rem;
+
+          ion-icon {
+            color: $dark-blue;
+            margin-top: 1.5rem;
+          }
+        }
+      }
     }
-} 
-
-
-
-
-
-
-
+  }
+}

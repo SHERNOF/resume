@@ -20,7 +20,7 @@ h2 {
   box-sizing: border-box; }
 
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   background: #151a33;
   -webkit-font-smoothing: antialiased;
   color: whitesmoke; }
@@ -32,6 +32,14 @@ html {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 2rem; }
+
+@media (max-width: 1280px) {
+  .contaner {
+    max-width: 80%; } }
+
+@media (max-width: 1024px) {
+  section.profile .left {
+    margin-bottom: 1rem; } }
 
 nav {
   background: #28365f;
@@ -129,7 +137,7 @@ nav {
     margin-bottom: 1.6rem; }
   .profile .right ul.contact li {
     color: #848db3;
-    margin-top: .7rem;
+    margin-top: 0.7rem;
     font-size: 14px; }
   .profile .right ul.contact li i {
     font-size: 18px;
@@ -161,7 +169,7 @@ nav {
     padding: 1rem;
     margin-top: 1rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
-    padding-bottom: 4rem;
+    padding-bottom: 1.5rem;
     margin-bottom: 1rem; }
     section.profile .left h2 {
       font-size: 1.4rem; }
@@ -192,8 +200,8 @@ nav {
       list-style-type: none;
       margin-bottom: 1.6rem; }
     section.profile .right ul.contact li {
-      margin-top: .7rem;
-      font-size: .5rem; }
+      margin-top: 0.7rem;
+      font-size: 0.5rem; }
     section.profile .right ul.contact li strong {
       display: none; }
     section.profile .right ul.contact li i {
@@ -257,7 +265,7 @@ nav {
   .professionalSummary {
     display: flex;
     flex-direction: column;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-bottom: 2rem; }
     .professionalSummary .leftSummary p b {
       font-size: 1.2rem;
@@ -274,10 +282,14 @@ nav {
       .professionalSummary .rightSummary .information {
         display: grid;
         grid-template-columns: 30% 5% 63%;
-        font-size: 1.5rem; } }
+        font-size: 1.5rem; }
+      .professionalSummary .rightSummary .modal {
+        max-width: 350px; }
+        .professionalSummary .rightSummary .modal .modal-dialog .modal-body li {
+          font-size: 1rem; } }
 
 .timeline {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   margin-bottom: 3rem;
   margin-top: 5rem;
   border-bottom: 0.1rem solid #28365f;
@@ -339,7 +351,7 @@ nav {
             position: relative; }
             .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-item::after,
             .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item::after {
-              content: '';
+              content: "";
               width: 20px;
               height: 20px;
               border-radius: 50%;
@@ -419,29 +431,32 @@ nav {
     justify-content: center;
     align-items: center;
     margin-left: 0;
-    margin-bottom: 5rem; }
+    margin-bottom: 2rem; }
     .timeline .timeline-title {
       text-align: center;
       justify-content: center; }
     .timeline .timeline_content {
       display: flex;
       flex-direction: column; }
+      .timeline .timeline_content .modal {
+        max-width: 350px; }
+        .timeline .timeline_content .modal .modal-dialog .modal-body li {
+          font-size: 1rem; }
       .timeline .timeline_content .timelines {
         display: flex;
         flex-direction: column-reverse; }
         .timeline .timeline_content .timelines .timeline1 {
-          font-size: 1rem;
-          margin-bottom: 2rem; }
+          font-size: 1rem; }
           .timeline .timeline_content .timelines .timeline1 .study {
             text-align: center;
             font-size: 3rem;
             margin-bottom: 2rem;
-            line-height: .9; }
+            line-height: 0.9; }
           .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-body .time {
             position: absolute;
             left: -8rem;
             top: 5px;
-            opacity: .5;
+            opacity: 0.5;
             font-size: 1.3rem; }
           .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-body .content {
             margin-left: 1.5rem;
@@ -459,7 +474,7 @@ nav {
             text-align: center;
             font-size: 3rem;
             margin-bottom: 2rem;
-            line-height: .9; }
+            line-height: 0.9; }
           .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item .time {
             left: -10rem;
             font-size: 1.2rem; }
@@ -473,23 +488,22 @@ nav {
             color: #28365f;
             text-decoration: none; }
       .timeline .timeline_content .skills {
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
         margin-top: -2rem;
         display: grid;
         grid-template-rows: auto;
         justify-content: center;
         line-height: 2; }
         .timeline .timeline_content .skills .skillSet {
-          line-height: .9;
-          font-size: 3rem;
-          margin-bottom: 2rem; }
+          line-height: 0.9;
+          font-size: 3rem; }
         .timeline .timeline_content .skills .skillTitle {
           font-size: 1.5rem;
           color: #28365f; }
         .timeline .timeline_content .skills .sk1 path.mainline {
           stroke-width: 5; }
         .timeline .timeline_content .skills .label-center {
-          padding-bottom: .5rem; }
+          padding-bottom: 0.5rem; }
         .timeline .timeline_content .skills .label {
           color: whitesmoke;
           font-size: 1.6rem; }

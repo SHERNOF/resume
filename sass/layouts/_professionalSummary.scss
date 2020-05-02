@@ -1,124 +1,124 @@
 .professionalSummary {
+  display: flex;
+  padding: 2rem;
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
+  border-bottom: 0.1rem solid $dark-blue;
+
+  .leftSummary {
+    flex: 1;
+
+    p b {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .dlCv {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .rightSummary {
+    flex: 1;
+    margin-left: 8rem;
+
+    .modal-title {
+      color: $pure;
+    }
+
+    .modal-body {
+      border-top: 1px solid rgb(150, 147, 147);
+      border-bottom: 1px solid rgb(150, 147, 147);
+
+      .statsItems {
+        list-style: none;
+        color: $pure;
+      }
+    }
+
+    .counters {
+      &:hover {
+        cursor: pointer;
+      }
+
+      .head {
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      .stats-icon {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+
+        .statsBox {
+          display: grid;
+          justify-content: center;
+          margin-bottom: 2rem;
+          text-align: center;
+          line-height: 2;
+        }
+
+        i {
+          text-align: center;
+          font-size: 4rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .professionalSummary {
     display: flex;
-    padding: 2rem;
-    margin-top: 5rem;
-    padding-bottom: 2rem;
-    margin-bottom: 5rem;
-    border-bottom: .1rem solid $dark-blue ;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 
-    .leftSummary{
-        flex: 1;
-        
-        p b {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-
-        .dlCv {
-            margin-top: 1.5rem;
-        }
-        
+    .leftSummary {
+      p b {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      .dlCv {
+        margin-top: 2rem;
+      }
     }
 
-    .rightSummary{
-        flex: 1;
-        margin-left: 8rem;
+    .rightSummary {
+      // display: none;
+      // display: flex;
+      // flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      // text-align: start;
+      margin-left: 0;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      line-height: 3;
 
-        .modal-title {
-            color: $pure;
-        }
-    
-        .modal-body {
-            border-top:  1px solid rgb(150, 147, 147);
-            border-bottom:  1px solid rgb(150, 147, 147);
-    
-            .statsItems {
-                list-style: none;
-                color: $pure;
-    
+      .information {
+        display: grid;
+        grid-template-columns: 30% 5% 63%;
+        font-size: 1.5rem;
+      }
+
+      .modal {
+        max-width: 350px;
+        .modal-dialog {
+          .modal-body {
+            li {
+              //   color: red;
+              font-size: 1rem;
             }
+          }
         }
-
-        .counters {
-    
-            &:hover {
-                cursor: pointer;
-            }
-
-        .head {
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-
-            .stats-icon {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                justify-content: space-around;
-
-                .statsBox {
-                    display: grid;
-                    justify-content: center;
-                    margin-bottom: 2rem;
-                    text-align: center;
-                    line-height: 2;
-                }
-
-                i {
-                    text-align: center;
-                    font-size: 4rem;
-                }
-
-                h3 {
-                    font-size: 1.2rem;
-                }
-            }
-        }  
+      }
     }
+  }
 }
-
-@media(max-width:700px){
-    .professionalSummary {
-        display: flex;
-        flex-direction: column;
-        margin-top: .5rem;
-        margin-bottom: 2rem;
-
-        .leftSummary{
-            p b {
-                font-size: 1.2rem;
-                margin-bottom: 1rem;
-            }
-            .dlCv {
-                margin-top: 2rem;
-            }
-        }
-        
-        .rightSummary{
-            // display: none;
-            // display: flex;
-            // flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            // text-align: start;
-            margin-left: 0;
-            margin-top: 1rem;
-            margin-bottom: 0;
-            line-height: 3;
-            
-            
-            
-            .information {
-                display: grid;
-                grid-template-columns: 30% 5% 63%;
-                font-size: 1.5rem;   
-            }  
-        }
-    }
-
-}
-
-       
-
-    
-    
-
