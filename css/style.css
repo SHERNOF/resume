@@ -170,13 +170,20 @@ nav {
     margin-top: 1rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
     padding-bottom: 1.5rem;
-    margin-bottom: 1rem; }
-    section.profile .left h2 {
-      font-size: 1.4rem; }
-    section.profile .left p {
-      font-size: 1.1rem; }
-    section.profile .left p b {
-      font-weight: 100; }
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    section.profile .left {
+      line-height: 1.8rem;
+      margin-left: 2rem; }
+      section.profile .left .nameSrn {
+        margin-top: 1rem;
+        line-height: 0.8; }
+        section.profile .left .nameSrn h2 {
+          font-size: 1.8rem; }
+        section.profile .left .nameSrn p {
+          font-size: 1.4rem; }
     section.profile .left img {
       width: 6rem;
       height: 6rem;
@@ -198,10 +205,12 @@ nav {
       font-size: xx-small; }
     section.profile .right ul.contact {
       list-style-type: none;
-      margin-bottom: 1.6rem; }
+      margin-bottom: 1.6rem;
+      margin-left: 2rem; }
     section.profile .right ul.contact li {
-      margin-top: 0.7rem;
-      font-size: 0.5rem; }
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      line-height: 1; }
     section.profile .right ul.contact li strong {
       display: none; }
     section.profile .right ul.contact li i {
@@ -282,7 +291,7 @@ nav {
       line-height: 3; }
       section.professionalSummary .rightSummary .modal {
         max-width: 330px;
-        left: 3%; }
+        left: 5%; }
         section.professionalSummary .rightSummary .modal .modal-dialog .modal-content .modal-body {
           padding: 0 1rem;
           line-height: 1.5; }
@@ -447,7 +456,7 @@ nav {
       flex-direction: column; }
       .timeline .timeline_content .modal {
         max-width: 330px;
-        left: 3%; }
+        left: 5%; }
         .timeline .timeline_content .modal .modal-dialog .modal-content .modal-body ul.list {
           padding: 0 1rem; }
           .timeline .timeline_content .modal .modal-dialog .modal-content .modal-body ul.list li {
