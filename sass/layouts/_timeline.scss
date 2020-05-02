@@ -196,7 +196,6 @@
     margin-bottom: 2rem;
 
     .timeline-title {
-      // padding: 1rem
       text-align: center;
       justify-content: center;
     }
@@ -206,12 +205,19 @@
       flex-direction: column;
 
       .modal {
-        max-width: 350px;
+        max-width: 330px;
+        left: 3%;
+
         .modal-dialog {
-          .modal-body {
-            li {
-              //   color: red;
-              font-size: 1rem;
+          .modal-content {
+            .modal-body {
+              ul.list {
+                padding: 0 1rem;
+                li {
+                  //   padding: 1rem;
+                  font-size: 1rem;
+                }
+              }
             }
           }
         }

@@ -236,7 +236,8 @@ nav {
       color: #eff2f9; }
     .professionalSummary .rightSummary .modal-body {
       border-top: 1px solid #969393;
-      border-bottom: 1px solid #969393; }
+      border-bottom: 1px solid #969393;
+      padding: 0 5rem; }
       .professionalSummary .rightSummary .modal-body .statsItems {
         list-style: none;
         color: #eff2f9; }
@@ -262,31 +263,37 @@ nav {
         font-size: 1.2rem; }
 
 @media (max-width: 700px) {
-  .professionalSummary {
+  section.professionalSummary {
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;
     margin-bottom: 2rem; }
-    .professionalSummary .leftSummary p b {
+    section.professionalSummary .leftSummary p b {
       font-size: 1.2rem;
       margin-bottom: 1rem; }
-    .professionalSummary .leftSummary .dlCv {
+    section.professionalSummary .leftSummary .dlCv {
       margin-top: 2rem; }
-    .professionalSummary .rightSummary {
+    section.professionalSummary .rightSummary {
       justify-content: flex-start;
       align-items: flex-start;
       margin-left: 0;
       margin-top: 1rem;
       margin-bottom: 0;
       line-height: 3; }
-      .professionalSummary .rightSummary .information {
+      section.professionalSummary .rightSummary .modal {
+        max-width: 330px;
+        left: 3%; }
+        section.professionalSummary .rightSummary .modal .modal-dialog .modal-content .modal-body {
+          padding: 0 1rem;
+          line-height: 1.5; }
+        section.professionalSummary .rightSummary .modal .modal-dialog .modal-content .modal-body .rightModal {
+          padding: 0 1rem; }
+          section.professionalSummary .rightSummary .modal .modal-dialog .modal-content .modal-body .rightModal li.statsItems {
+            font-size: 1.2rem; }
+      section.professionalSummary .rightSummary .information {
         display: grid;
         grid-template-columns: 30% 5% 63%;
-        font-size: 1.5rem; }
-      .professionalSummary .rightSummary .modal {
-        max-width: 350px; }
-        .professionalSummary .rightSummary .modal .modal-dialog .modal-body li {
-          font-size: 1rem; } }
+        font-size: 1.5rem; } }
 
 .timeline {
   margin-left: 0.5rem;
@@ -439,9 +446,12 @@ nav {
       display: flex;
       flex-direction: column; }
       .timeline .timeline_content .modal {
-        max-width: 350px; }
-        .timeline .timeline_content .modal .modal-dialog .modal-body li {
-          font-size: 1rem; }
+        max-width: 330px;
+        left: 3%; }
+        .timeline .timeline_content .modal .modal-dialog .modal-content .modal-body ul.list {
+          padding: 0 1rem; }
+          .timeline .timeline_content .modal .modal-dialog .modal-content .modal-body ul.list li {
+            font-size: 1rem; }
       .timeline .timeline_content .timelines {
         display: flex;
         flex-direction: column-reverse; }
