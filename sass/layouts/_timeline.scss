@@ -15,11 +15,13 @@
   .timeline_content {
     .modal-title {
       color: $pure;
+      font-size: 2rem;
     }
 
     .modal-body {
       border-top: 1px solid rgb(150, 147, 147);
       border-bottom: 1px solid rgb(150, 147, 147);
+      padding: 0 5rem;
       .statsItems {
         list-style: none;
         color: $pure;
@@ -208,14 +210,23 @@
         max-width: 330px;
         left: 5%;
 
+        .modal-header {
+          .modal-title {
+            // color: red;
+            font-size: 1.7rem;
+            padding-top: 0.5rem;
+          }
+        }
+
         .modal-dialog {
           .modal-content {
             .modal-body {
+              padding: 1.2rem 3rem;
               ul.list {
-                padding: 0 1rem;
                 li {
-                  //   padding: 1rem;
-                  font-size: 1rem;
+                  // color: red;
+                  font-size: 1.4rem;
+                  line-height: 1.6;
                 }
               }
             }
@@ -223,9 +234,6 @@
         }
       }
 
-      // .timeline1:nth-child(1) .timeline-body .timeline-item .content p{
-      //     font-size: 1rem;
-      // }
       .timelines {
         display: flex;
         flex-direction: column-reverse;

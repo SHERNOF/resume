@@ -25,6 +25,7 @@
 
     .modal-title {
       color: $pure;
+      font-size: 2rem;
     }
 
     .modal-body {
@@ -103,17 +104,21 @@
         max-width: 330px;
         left: 5%;
 
-        .modal-dialog .modal-content .modal-body {
-          padding: 0 1rem;
-          line-height: 1.5;
+        .modal-dialog {
+          .modal-content {
+            .modal-body {
+              padding: 1.2rem 3rem;
+              line-height: 2;
+              ul li.statsItems {
+                font-size: 5rem;
+              }
+            }
+          }
         }
 
         .modal-dialog .modal-content .modal-body .rightModal {
-          padding: 0 1rem;
-
           li.statsItems {
             font-size: 1.2rem;
-            // color: red;
           }
         }
       }
