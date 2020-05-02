@@ -491,7 +491,6 @@ nav {
           .timeline .timeline_content .timelines .timeline1 .timeline-body .timeline-body .title {
             font-weight: 500;
             margin-bottom: 15px;
-            color: #28365f;
             text-decoration: none; }
         .timeline .timeline_content .timelines .timeline2 {
           font-size: 1.4rem;
@@ -511,7 +510,6 @@ nav {
           .timeline .timeline_content .timelines .timeline2 .timeline-body .timeline-item .title {
             font-weight: 500;
             margin-bottom: 15px;
-            color: #28365f;
             text-decoration: none; }
       .timeline .timeline_content .skills {
         margin-bottom: 2rem;
