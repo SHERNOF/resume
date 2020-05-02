@@ -19,9 +19,9 @@
     }
 
     .modal-body {
-      border-top: 1px solid rgb(150, 147, 147);
-      border-bottom: 1px solid rgb(150, 147, 147);
-      padding: 0 5rem;
+      border-top: 1px solid whitesmoke;
+      border-bottom: 1px solid whitesmoke;
+      padding: 1rem 5rem;
       .statsItems {
         list-style: none;
         color: $pure;
@@ -220,11 +220,13 @@
 
         .modal-dialog {
           .modal-content {
+            border-bottom: whitesmoke;
             .modal-body {
               padding: 1.2rem 3rem;
               ul.list {
+                border-top: whitesmoke;
                 li {
-                  // color: red;
+                  color: white;
                   font-size: 1.4rem;
                   line-height: 1.6;
                 }

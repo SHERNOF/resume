@@ -245,9 +245,9 @@ nav {
       color: #eff2f9;
       font-size: 2rem; }
     .professionalSummary .rightSummary .modal-body {
-      border-top: 1px solid #969393;
-      border-bottom: 1px solid #969393;
-      padding: 0 5rem; }
+      border-top: 1px solid white;
+      border-bottom: 1px solid whitesmoke;
+      padding: 1rem 5rem; }
       .professionalSummary .rightSummary .modal-body .statsItems {
         list-style: none;
         color: #eff2f9; }
@@ -299,7 +299,7 @@ nav {
           section.professionalSummary .rightSummary .modal .modal-dialog .modal-content .modal-body ul li.statsItems {
             font-size: 5rem; }
         section.professionalSummary .rightSummary .modal .modal-dialog .modal-content .modal-body .rightModal li.statsItems {
-          font-size: 1.2rem; }
+          font-size: 1.4rem; }
       section.professionalSummary .rightSummary .information {
         display: grid;
         grid-template-columns: 30% 5% 63%;
@@ -324,9 +324,9 @@ nav {
       color: #eff2f9;
       font-size: 2rem; }
     .timeline .timeline_content .modal-body {
-      border-top: 1px solid #969393;
-      border-bottom: 1px solid #969393;
-      padding: 0 5rem; }
+      border-top: 1px solid whitesmoke;
+      border-bottom: 1px solid whitesmoke;
+      padding: 1rem 5rem; }
       .timeline .timeline_content .modal-body .statsItems {
         list-style: none;
         color: #eff2f9; }
@@ -463,11 +463,16 @@ nav {
         .timeline .timeline_content .modal .modal-header .modal-title {
           font-size: 1.7rem;
           padding-top: 0.5rem; }
-        .timeline .timeline_content .modal .modal-dialog .modal-content .modal-body {
-          padding: 1.2rem 3rem; }
-          .timeline .timeline_content .modal .modal-dialog .modal-content .modal-body ul.list li {
-            font-size: 1.4rem;
-            line-height: 1.6; }
+        .timeline .timeline_content .modal .modal-dialog .modal-content {
+          border-bottom: whitesmoke; }
+          .timeline .timeline_content .modal .modal-dialog .modal-content .modal-body {
+            padding: 1.2rem 3rem; }
+            .timeline .timeline_content .modal .modal-dialog .modal-content .modal-body ul.list {
+              border-top: whitesmoke; }
+              .timeline .timeline_content .modal .modal-dialog .modal-content .modal-body ul.list li {
+                color: white;
+                font-size: 1.4rem;
+                line-height: 1.6; }
       .timeline .timeline_content .timelines {
         display: flex;
         flex-direction: column-reverse; }

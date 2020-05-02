@@ -29,9 +29,9 @@
     }
 
     .modal-body {
-      border-top: 1px solid rgb(150, 147, 147);
-      border-bottom: 1px solid rgb(150, 147, 147);
-      padding: 0 5rem;
+      border-top: 1px solid white;
+      border-bottom: 1px solid whitesmoke;
+      padding: 1rem 5rem;
 
       .statsItems {
         list-style: none;
@@ -118,7 +118,7 @@
 
         .modal-dialog .modal-content .modal-body .rightModal {
           li.statsItems {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
           }
         }
       }
